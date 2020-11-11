@@ -15,22 +15,31 @@ install -d /usr/local/etc/v2ray
 cat << EOF > /usr/local/etc/v2ray/config.json
 {
     "inbounds": [
-        {
-            "port": $PORT,
-            "protocol": "vmess",
-            "settings": {
+                    {
                 "clients": [
                     {
-                        "id": "$UUID",
-                        "alterId": 64
+                        "id": "$ID",
+                        "flow": "",
+                        "level": 0,
+                        "email": "love@v2fly.org"
                     }
                 ],
-                "disableInsecureEncryption": true
-            },
-            "streamSettings": {
-                "network": "ws"
+                "decryption": "none",
+                "fallbacks": [
+                    {
+                        "dest": 80
+                    }
+                ],
+                "streamSettings": {
+                    "network": "tcp",
+                    "security": "tls",
+                    "tlsSettings": {
+                      "allowInsecure": false,
+                      "serverName": null
+                    },
+                    "tcpSettings": null,
+                  }
             }
-        }
     ],
     "outbounds": [
         {
