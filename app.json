@@ -5,7 +5,7 @@
     "env": {
         "UUID": {
             "description": "VLESS ID",
-            "value": "cfa031987-2d26-4636-98b6-ab85ca87ecb5"
+            "value": "1309c705-61ff-47d3-bab9-67a377e403db"
         }
     },
     "repository": "https://github.com/DanyTPG/heroku-vless",
