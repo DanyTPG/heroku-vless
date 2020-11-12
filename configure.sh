@@ -15,31 +15,34 @@ install -d /usr/local/etc/v2ray
 cat << EOF > /usr/local/etc/v2ray/config.json
 {
     "inbounds": [
-                    {
+        {
+            "protocol": "vless",
+            "settings": {
                 "clients": [
                     {
-                        "id": "$ID",
-                        "flow": "",
+                        "id": "$ID", 
+                        "flow": "xtls-rprx-direct",
                         "level": 0,
                         "email": "love@v2fly.org"
                     }
                 ],
                 "decryption": "none",
-                "fallbacks": [
-                    {
-                        "dest": 80
-                    }
-                ],
-                "streamSettings": {
-                    "network": "tcp",
-                    "security": "tls",
-                    "tlsSettings": {
-                      "allowInsecure": false,
-                      "serverName": null
-                    },
-                    "tcpSettings": null,
-                  }
+                "fallbacks":[
+                        {
+                                "dest": 80
+                        }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "xtls",
+                "xtlsSettings": {
+                    "alpn": [
+                        "http/1.1"
+                    ]
+                }
             }
+        }
     ],
     "outbounds": [
         {
