@@ -33,9 +33,7 @@ cat << EOF > /usr/local/etc/v2ray/config.json
             },
             "streamSettings": {
                 "network": "tcp",
-                "security": "xtls",
-                "xtlsSettings": {
-                }
+                "security": "xtls"
             }
         }
     ],
