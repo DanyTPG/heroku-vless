@@ -9,7 +9,7 @@ VLESS:
 Address: appname.herokuapp.com
 Port: 443
 id: Your entered id
-Flow: xtls-rprx-direct
+Flow: 
 encryption: none
-Transport: tcp
-TLS: xtlx
+Transport: ws
+TLS: tls
