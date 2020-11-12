@@ -35,9 +35,6 @@ cat << EOF > /usr/local/etc/v2ray/config.json
                 "network": "tcp",
                 "security": "xtls",
                 "xtlsSettings": {
-                    "alpn": [
-                        "http/1.1"
-                    ]
                 }
             }
         }
