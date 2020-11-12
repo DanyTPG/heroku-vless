@@ -6,10 +6,10 @@ Deploy VLESS server to heroku
 
 ```
 VLESS:
-Address: appname.herokuapp.com
+Address: yourAppName.herokuapp.com
 Port: 443
 id: Your entered id
-Flow: 
+Flow: xtls-rprx-direct
 encryption: none
 Transport: ws
 TLS: tls
