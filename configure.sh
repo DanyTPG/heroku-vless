@@ -29,9 +29,6 @@ cat << EOF > /usr/local/etc/v2ray/config.json
                 ],
                 "decryption": "none",
                 "fallbacks":[
-                        {
-                                "dest": 80
-                        }
                 ]
             },
             "streamSettings": {
