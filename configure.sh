@@ -22,7 +22,7 @@ cat << EOF > /usr/local/etc/v2ray/config.json
                 "clients": [
                     {
                         "id": "$ID", 
-                        "flow": "",
+                        "flow": "xtls-rprx-direct",
                         "level": 0,
                         "email": "love@v2fly.org"
                     }
@@ -30,10 +30,7 @@ cat << EOF > /usr/local/etc/v2ray/config.json
                 "decryption": "none"
             },
             "streamSettings": {
-                "network": "ws",
-                "wsSettings": {
-                  "path": "/ww"
-                }
+                "network": "ws"
             }
         }
     ],
