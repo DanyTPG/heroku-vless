@@ -27,9 +27,7 @@ cat << EOF > /usr/local/etc/v2ray/config.json
                         "email": "love@v2fly.org"
                     }
                 ],
-                "decryption": "none",
-                "fallbacks":[
-                ]
+                "decryption": "none"
             },
             "streamSettings": {
                 "network": "ws",
