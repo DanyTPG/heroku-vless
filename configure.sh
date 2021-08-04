@@ -1,5 +1,5 @@
 #!/bin/sh
-apk update && apk add --no-cache --virtual .build-deps ca-certificates curl unzip && apk del .build-deps
+apk update && apk add --no-cache --virtual .build-deps ca-certificates curl unzip 
 # Download and install V2Ray
 
 mkdir /tmp/v2ray
