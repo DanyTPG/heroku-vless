@@ -1,7 +1,5 @@
-FROM alpine:latest
-RUN apk update && \
-    apk add --no-cache --virtual .build-deps ca-certificates curl unzip
-ADD configure.sh /configure.sh
-RUN chmod +x /configure.sh
-CMD /configure.sh
-RUN apk del .build-deps
+FROM teddysun/xray
+ENV TZ=Europe/London
+ADD entrypoint.sh /
+RUN chmod +x /entrypoint.sh
+CMD /entrypoint.sh
