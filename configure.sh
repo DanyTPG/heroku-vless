@@ -24,7 +24,7 @@ cat << EOF > /usr/local/etc/v2ray/config.json
                         "id": "$ID", 
                         "flow": "xtls-rprx-direct",
                         "level": 0,
-                        "email": "love@v2fly.org"
+                        "email": "test@example.org"
                     }
                 ],
                 "decryption": "none"
