@@ -22,7 +22,7 @@ cat << EOF > /usr/local/etc/v2ray/config.json
                 "clients": [
                     {
                         "id": "$ID", 
-                        "flow": "xtls-rprx-direct",
+                        "flow": "",
                         "level": 0,
                         "email": "test@example.org"
                     }
